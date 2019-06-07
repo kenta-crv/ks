@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   post '/confirm' => 'contact#confirm' #確認
   post '/thanks' => 'contact#thanks' #完了
 
-  get 'contact' => 'contact#index'
-  get 'contact/confirm' => 'contact#confirm'
-  get 'contact/thanks' => 'contact#thanks'
+  get '/contact' => 'contact#index'
+  post '/confirm' => 'contact#confirm'
+  post '/thanks' => 'contact#thanks'
 end
