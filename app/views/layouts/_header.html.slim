@@ -1,0 +1,31 @@
+.row
+  .col-md-8
+      =image_tag "logo.png", height: "85px"
+
+.row.header
+  ul#dropmenu
+    li
+      = link_to  'トップ', '/' , class: "col-md"
+    li
+      = link_to  '事業一覧', '/business' , :class=>"col-md"
+      ul
+        li
+          = link_to  'テストマーケティング事業', '/' , :class=>"col-md"
+        li
+          = link_to  '完全成果報酬型アポ代行事業', '/about' , :class=>"col-md"
+        li
+          = link_to  '記帳代行サポート事業', '/top/carrier' , :class=>"col-md"
+        li
+          = link_to  '飲食店専門インフルエンサーマーケティング事業', '/top/small' , :class=>"col-md"
+        li
+          = link_to  '社労士向け顧客管理システム兼書類自動生成CRM', '/top/birth' , :class=>"col-md"
+        li
+          = link_to  '完全成果報酬型WEBマーケティング事業', '/top/trial' , :class=>"col-md"
+        li
+          = link_to  '完全成果報酬型バックオフィスコンサルティング事業', '/top/foreign' , :class=>"col-md"
+    li
+      = link_to  '社長の格言', '/president' , :class=>"col-md"
+    li
+      = link_to  '会社概要', '/company' , :class=>"col-md"
+    li
+      = link_to  'お問い合わせ', '/contact' , :class=>"col-md"

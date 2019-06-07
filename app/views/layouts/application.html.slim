@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+      = render template: 'layouts/_head.html.slim'
+  header
+    .container-fuild
+      = render template: 'layouts/_header.html.slim'
+  body
+    p.notice
+      = notice
+    p.alert
+      = alert
+    main
+      .bread
+        = render_breadcrumbs separator: ' > '
+      = yield
